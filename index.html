@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Steps to access the site</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-image: url("https://media.istockphoto.com/id/544333414/nl/vector/abstract-lines-technology-background-tree-line-chipset-concept.jpg?s=612x612&w=0&k=20&c=iDQcKXX13iW0dT3Z5V3reab-uT6eo9Oj4uutoNVZROI=");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .marquee-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: #329550;
+                padding: 10px;
+                z-index: 1; /* make sure it's on top of everything */
+            }
+
+            .marquee-text {
+                font-size: 18px;
+                color: #8a0000;
+            }
+
+            .container {
+                max-width: 600px;
+                margin: 130px auto;
+                padding: 30px;
+                background-color: #fff;
+                border: 1px solid #ddd;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+
+            .steps {
+                margin-bottom: 20px;
+            }
+
+            .steps p {
+                margin-bottom: 10px;
+            }
+
+            .visit-btn {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .visit-btn {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .backup-btn {
+                background-color: #4caf50;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            .visit-btn:hover {
+                background-color: #3e8e41;
+            }
+            .backup-btn:hover {
+                background-color: #3e8e41;
+            }
+
+            #result {
+                font-size: 18px;
+                color: #666;
+                margin-top: 20px;
+            }
+
+            .visit-btn {
+                background-image: url("visit-btn-bg.png");
+                background-size: 100% 100%;
+                background-position: center;
+            }
+
+            .backup-btn {
+                background-image: url("visit-btn-bg.png");
+                background-size: 100% 100%;
+                background-position: center;
+            }
+            footer {
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #f0f0f0;
+                padding: 10px;
+                text-align: center;
+                font-size: 12px;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="marquee-container">
+            <marquee
+                behavior="scroll"
+                direction="left"
+                scrollamount="5"
+                scrolldelay="10"
+            >
+                <span class="marquee-text"
+                    >This page has been created by Amrit Raj to explain how to
+                    access the site.</span
+                >
+            </marquee>
+        </div>
+        <div class="container">
+            <b> <h1>Steps to access the site</h1> </b>
+            <div class="steps">
+                <p>Step 1: Click on Visit now button</p>
+                <p>Step 2: Click on allow to redirect to the server.</p>
+                <p>Step 3: Click on Backup button in case of server failure.</p>
+            </div>
+            <button name="check" class="visit-btn" id="visit-btn">Visit</button>
+            <button name="check" class="backup-btn" id="backup-btn">
+                Back Up
+            </button>
+            <p id="result">Your page will be open now!</p>
+        </div>
+
+        <script>
+            document
+                .getElementById("visit-btn")
+                .addEventListener("click", function () {
+                    window.open("https://tinyurl.com/25o2y4e6", "_blank");
+                });
+
+            document
+                .getElementById("backup-btn")
+                .addEventListener("click", function () {
+                    window.open("https://tinyurl.com/25o2y4e6", "_blank");
+                });
+        </script>
+    </body>
+    <footer>
+        <p>&copy; 2024 Amrit Raj. All rights reserved.</p>
+    </footer>
+</html>
